@@ -2,6 +2,10 @@
 
 /usr/bin/hadoop jar earth-1.0-SNAPSHOT.jar earth/mr/WordCount /user/cstor/mr/input/text.txt /user/cstor/mr/output2
 
+bin/hadoop jar test/earth-1.0-SNAPSHOT/earth-1.0-SNAPSHOT.jar earth/mr/WordCount /user/hjg/input/file01 /user/test/output
+
+bin/hadoop jar test/earth-1.0-SNAPSHOT/earth-1.0-SNAPSHOT.jar earth/mr/ETLSeedData
+
 
 export RAZOR_MR_HOME=$(dirname $(cd $(dirname $0); pwd))
 export HADOOP_CONF=/etc/hadoop/conf.cloudera.yarn
